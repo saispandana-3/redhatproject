@@ -1,5 +1,5 @@
 - name: patching server
-  hosts: 172.17.0.2 
+  hosts: docker
   become: yes
   tasks:
     - name: installing packages
