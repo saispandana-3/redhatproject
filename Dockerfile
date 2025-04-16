@@ -1,4 +1,4 @@
-FROM redhat:latest
+FROM ubuntu:latest
 
 WORKDIR /sai
 
