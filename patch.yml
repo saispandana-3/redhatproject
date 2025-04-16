@@ -1,5 +1,6 @@
 - name: patching server
-  hosts: docker
+  hosts: localhost
+  connection: local
   become: yes
   tasks:
     - name: installing packages
