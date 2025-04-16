@@ -1,0 +1,16 @@
+- name: patching server
+  hosts: docker
+  become: yes
+  tasks:
+    - name: installing packages
+      apt:
+        name: httpd
+        state: present
+    - name: starting service
+      service:
+          name: httpd
+          state: started
+          enabled: yes
+~
+~
+
